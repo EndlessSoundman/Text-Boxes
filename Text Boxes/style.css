@@ -1,0 +1,51 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root and Body Styling */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Flex Container */
+section {
+    display: flex;
+    gap: 20px;
+    /* Additional styling for demonstration purposes */
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 800px) {
+    section {
+        flex-direction: column; /* Stack flex items vertically */
+    }
+}
+
+/* Individual Element Styling */
+section > div {
+    flex: 1; /* Distribute available space evenly among child elements */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Color Coding */
+section > div:nth-child(1) {
+    background-color: #FFD700; /* Gold */
+}
+
+section > div:nth-child(2) {
+    background-color: #87CEEB; /* Sky Blue */
+}
+
+section > div:nth-child(3) {
+    background-color: #FFA07A; /* Light Salmon */
+}
